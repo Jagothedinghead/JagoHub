@@ -1,0 +1,424 @@
+﻿-- Gui to Lua
+-- Version: 3.2
+ 
+-- Instances:
+ 
+local JagoHub = Instance.new("ScreenGui")
+local Hack = Instance.new("Frame")
+local Nameandcrap = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Home = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Jail = Instance.new("TextButton")
+local Haven = Instance.new("TextButton")
+local Yeild = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+local Mm2 = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+ 
+--Properties:
+ 
+JagoHub.Name = "JagoHub"
+JagoHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+JagoHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+Hack.Name = "Hack"
+Hack.Parent = JagoHub
+Hack.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Hack.BorderSizePixel = 0
+Hack.Position = UDim2.new(0.209411755, 0, 0.247104242, 0)
+Hack.Size = UDim2.new(0, 493, 0, 262)
+Hack.Visible = false
+ 
+Nameandcrap.Name = "Name and crap"
+Nameandcrap.Parent = Hack
+Nameandcrap.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Nameandcrap.BorderSizePixel = 0
+Nameandcrap.Position = UDim2.new(0.000486795558, 0, 0, 0)
+Nameandcrap.Size = UDim2.new(0, 493, 0, 37)
+ 
+TextLabel.Parent = Nameandcrap
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.296146035, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 37)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Jago Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+ 
+Home.Name = "Home"
+Home.Parent = Hack
+Home.BackgroundColor3 = Color3.fromRGB(31, 32, 32)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0, 0, 0.141221374, 0)
+Home.Size = UDim2.new(0, 493, 0, 18)
+ 
+TextLabel_2.Parent = Home
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 154, 0, 19)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Panginoong Hesukristo#9143"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+ 
+ScrollingFrame.Parent = Hack
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.000486795616, 0, 0.213740453, 0)
+ScrollingFrame.Size = UDim2.new(0, 493, 0, 206)
+ 
+Jail.Name = "Jail"
+Jail.Parent = ScrollingFrame
+Jail.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jail.BackgroundTransparency = 1.000
+Jail.BorderSizePixel = 0
+Jail.Position = UDim2.new(0.0425963476, 0, 0.0381679386, 0)
+Jail.Size = UDim2.new(0, 125, 0, 34)
+Jail.Font = Enum.Font.SciFi
+Jail.Text = "Jailbreak Hack"
+Jail.TextColor3 = Color3.fromRGB(48, 255, 6)
+Jail.TextScaled = true
+Jail.TextSize = 14.000
+Jail.TextWrapped = true
+ 
+Haven.Name = "Haven"
+Haven.Parent = ScrollingFrame
+Haven.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Haven.BackgroundTransparency = 1.000
+Haven.BorderSizePixel = 0
+Haven.Position = UDim2.new(0.373225152, 0, 0.0381679386, 0)
+Haven.Size = UDim2.new(0, 125, 0, 34)
+Haven.Font = Enum.Font.SciFi
+Haven.Text = "BrookHaven Hack"
+Haven.TextColor3 = Color3.fromRGB(48, 255, 6)
+Haven.TextScaled = true
+Haven.TextSize = 14.000
+Haven.TextWrapped = true
+ 
+Yeild.Name = "Yeild"
+Yeild.Parent = ScrollingFrame
+Yeild.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Yeild.BackgroundTransparency = 1.000
+Yeild.BorderSizePixel = 0
+Yeild.Position = UDim2.new(0.701825559, 0, 0.0381679386, 0)
+Yeild.Size = UDim2.new(0, 125, 0, 34)
+Yeild.Font = Enum.Font.SciFi
+Yeild.Text = "Infintie Yeild"
+Yeild.TextColor3 = Color3.fromRGB(48, 255, 6)
+Yeild.TextScaled = true
+Yeild.TextSize = 14.000
+Yeild.TextWrapped = true
+ 
+Speed.Name = "Speed"
+Speed.Parent = ScrollingFrame
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BackgroundTransparency = 1.000
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.0425963402, 0, 0.137404591, 0)
+Speed.Size = UDim2.new(0, 125, 0, 34)
+Speed.Font = Enum.Font.SciFi
+Speed.Text = "Speed Hack Bypass (press q to work)"
+Speed.TextColor3 = Color3.fromRGB(48, 255, 6)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+ 
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = ScrollingFrame
+Aimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.BackgroundTransparency = 1.000
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0.371196747, 0, 0.137404591, 0)
+Aimbot.Size = UDim2.new(0, 125, 0, 34)
+Aimbot.Font = Enum.Font.SciFi
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(48, 255, 6)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14.000
+Aimbot.TextWrapped = true
+ 
+Mm2.Name = "Mm2"
+Mm2.Parent = ScrollingFrame
+Mm2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mm2.BackgroundTransparency = 1.000
+Mm2.BorderSizePixel = 0
+Mm2.Position = UDim2.new(0.701825559, 0, 0.137404591, 0)
+Mm2.Size = UDim2.new(0, 125, 0, 34)
+Mm2.Font = Enum.Font.SciFi
+Mm2.Text = "Mm2 Hack"
+Mm2.TextColor3 = Color3.fromRGB(48, 255, 6)
+Mm2.TextScaled = true
+Mm2.TextSize = 14.000
+Mm2.TextWrapped = true
+ 
+TextButton.Parent = JagoHub
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0, 0, 0.548262537, 0)
+TextButton.Size = UDim2.new(0, 70, 0, 50)
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "Open/Close"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+ 
+-- Scripts:
+ 
+local function CGAOSM_fake_script() -- TextLabel.Rainbower 
+	local script = Instance.new('LocalScript', TextLabel)
+ 
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(CGAOSM_fake_script)()
+local function JCVN_fake_script() -- TextLabel_2.Rainbower 
+	local script = Instance.new('LocalScript', TextLabel_2)
+ 
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(JCVN_fake_script)()
+local function YEMLU_fake_script() -- Jail.GuiClick_Script 
+	local script = Instance.new('LocalScript', Jail)
+ 
+	function OnClicked() 
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(YEMLU_fake_script)()
+local function FKDWINX_fake_script() -- Haven.GuiClick_Script 
+	local script = Instance.new('LocalScript', Haven)
+ 
+	function OnClicked() 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NocturneMoDz/BROOKHAVEN-GUI-/main/METAB", true))()
+	-- skiddy skidder you are a nigger
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(FKDWINX_fake_script)()
+local function ANFGO_fake_script() -- Yeild.GuiClick_Script 
+	local script = Instance.new('LocalScript', Yeild)
+ 
+	function OnClicked() 
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(ANFGO_fake_script)()
+local function RZRL_fake_script() -- Speed.GuiClick_Script 
+	local script = Instance.new('LocalScript', Speed)
+ 
+	function OnClicked() 
+		down = false
+		velocity = Instance.new("BodyVelocity")
+		velocity.maxForce = Vector3.new(100000, 0, 100000)
+		---vv Use that to change the speed v
+		local speed = 150
+		gyro = Instance.new("BodyGyro")
+		gyro.maxTorque = Vector3.new(100000, 0, 100000)
+	
+		local hum = game.Players.LocalPlayer.Character.Humanoid
+	
+		function onButton1Down(mouse)
+			down = true
+			velocity.Parent = game.Players.LocalPlayer.Character.UpperTorso
+			velocity.velocity = (hum.MoveDirection) * speed
+			gyro.Parent = game.Players.LocalPlayer.Character.UpperTorso
+			while down do
+				if not down then break end
+				velocity.velocity = (hum.MoveDirection) * speed
+				local refpos = gyro.Parent.Position + (gyro.Parent.Position - workspace.CurrentCamera.CoordinateFrame.p).unit * 5
+				gyro.cframe = CFrame.new(gyro.Parent.Position, Vector3.new(refpos.x, gyro.Parent.Position.y, refpos.z))
+				wait(0.1)
+			end
+		end
+	
+		function onButton1Up(mouse)
+			velocity.Parent = nil
+			gyro.Parent = nil
+			down = false
+		end
+		--To Change the key in those 2 lines, replace the "q" with your desired key
+		function onSelected(mouse)
+			mouse.KeyDown:connect(function(k) if k:lower()=="q"then onButton1Down(mouse)end end)
+			mouse.KeyUp:connect(function(k) if k:lower()=="q"then onButton1Up(mouse)end end)
+		end
+	
+		onSelected(game.Players.LocalPlayer:GetMouse())
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(RZRL_fake_script)()
+local function UCQYBEM_fake_script() -- Aimbot.GuiClick_Script 
+	local script = Instance.new('LocalScript', Aimbot)
+ 
+	function OnClicked() 
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(UCQYBEM_fake_script)()
+local function JBZSEQ_fake_script() -- Mm2.GuiClick_Script 
+	local script = Instance.new('LocalScript', Mm2)
+ 
+	function OnClicked() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(JBZSEQ_fake_script)()
+local function WAKU_fake_script() -- Hack.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Hack)
+ 
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(WAKU_fake_script)()
+local function USJH_fake_script() -- TextButton.Rainbow Frame 
+	local script = Instance.new('LocalScript', TextButton)
+ 
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+	
+	--Enjoy ;) dont change anything. I didnt script this so i dont know if you can change but its adviced not 2
+end
+coroutine.wrap(USJH_fake_script)()
+local function GIBA_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+ 
+	function OnClicked() 
+		if script.Parent.Parent.Hack.Visible == true then
+			script.Parent.Parent.Hack.Visible = false else
+			script.Parent.Parent.Hack.Visible = true
+		end
+	end
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(GIBA_fake_script)()
+ 
